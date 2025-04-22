@@ -7,11 +7,13 @@ body {
 	text-align: center;
         color: blue;
         font-family: 'DancingScriptRegular';
+	     src: url('/assets/fonts/dancing/your/path/to/DancingScriptRegular.ttf') format('truetype');
         font-size: 400%;}
 
 
   p {
     font-family: 'DancingScriptRegular';
+	    src: url('/assets/fonts/dancing/your/path/to/DancingScriptRegular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-size: 200%;}
