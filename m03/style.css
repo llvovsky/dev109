@@ -17,13 +17,13 @@ body {
 h1 {
     text-align: center;
     color: blue;
-    font-family: 'DancingScriptRegular', cursive;
+    font-family: 'DancingScriptRegular';
     font-size: 400%;
 }
 
 
 p {
-    font-family: 'DancingScriptRegular', cursive;
+    font-family: 'DancingScriptRegular';
     font-weight: normal;
     font-style: normal;
     font-size: 200%;
