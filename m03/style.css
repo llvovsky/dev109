@@ -1,12 +1,3 @@
-
-@font-face {
-    font-family: 'DancingScriptRegular';
-    src: url('https://fontlibrary.org/en/face/dancing/assets/fonts/dancing/6abe34ba1e4054f1d470f5ad3fd2c639/86aadd0451f9e7dafa957e1e61dd2ed7/DancingScriptRegular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
 body {
     font-family: Helvetica, Arial, sans-serif;
     color: #665544;
@@ -32,4 +23,4 @@ p {
 
 i {
     color: darkgreen;
-}
+  }
