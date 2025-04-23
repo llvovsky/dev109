@@ -1,10 +1,11 @@
+/* global body styling */
 body {
     font-family: Helvetica, Arial, sans-serif;
     color: #665544;
     padding: 0 15% 0 15%;
 }
 
-
+/* header styling */
 h1 {
     text-align: center;
     color: blue;
@@ -12,7 +13,7 @@ h1 {
     font-size: 400%;
 }
 
-
+/* paragraph styling */
 p {
     font-family: 'DancingScriptRegular';
     font-weight: normal;
@@ -20,7 +21,7 @@ p {
     font-size: 200%;
 }
 
-
+/* italics styling */
 i {
     color: darkgreen;
   }
