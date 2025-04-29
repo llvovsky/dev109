@@ -33,7 +33,10 @@ body {
             background-color: #fc03f4;}
           #feature{
             background-color: #35fc03;
-            background-image: url("../images/image2.jpg");}
+            background-image: url("../images/image20.jpg");
+	    background-size:contain;
+            background-position: right;
+            background-repeat:no-repeat;}
           .article.column1 {
             background-color: #fc5e03;}
           .article.column2 {
