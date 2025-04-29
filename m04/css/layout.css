@@ -1,11 +1,6 @@
-<style type="text/css">
-		* {
-				font-family: Arial, Verdana, sans-serif;
-				color: #665544;
-				text-align: center;}
-			body {
-				width: 90%;
-				margin: 0 auto;}
+		body {
+			width: 90%;
+			margin: 0 auto;}
 			#content {
 				overflow: auto;}
 			#nav, #feature, #footer {
@@ -26,4 +21,4 @@
 				height: 10em;
 				margin-bottom: 1em;
 				background-color: #efefef;}
-		</style>
+	
