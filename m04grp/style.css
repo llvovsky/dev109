@@ -40,17 +40,8 @@ h2 {
   text-decoration: underline;
 }
 
-footer {
-  background-color: #e0e84f;
-  font-size: 0.8em;
-  padding: 5px 0;
-  text-align: center;
+#footer {
+    text-align: center;
 }
-
-.footer-container {
-  max-width: 800px; 
-  margin: 0 auto;
-}
-
 
 
