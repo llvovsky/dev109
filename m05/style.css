@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Wellfleet');
+
+body {
+    background-color: #fecc6f; 
+    color: #fff;
+    font-family: 'Wellfleet', times, serif;
+    font-size: 150%;
+    margin: 0;
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    
+    font-size: 48px;
+    margin-top: 40px;
+    letter-spacing: 4px;
+}
+
+p {
+    margin-top: -10px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #523620;
+}
+
+#blackboard {
+   
+    background-color: #3e5555; 
+    border: 20px solid #5d3a00; 
+    border-radius: 20px;
+    width: 320px;
+    margin: 0 auto 40px auto;
+    padding: 30px 20px;
+    color: white; 
+    font-size: 18px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    line-height: 2;
+    text-align: center;
+    position: relative; 
+    z-index: 2;         
+}
+
+#teacher2 {
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+    width: 200px;
+    z-index: 1; 
+}
+
+#logo {
+    display: block;
+    margin: 40px auto;
+    width: 500px; 
+    height: auto;
+}
