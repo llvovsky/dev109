@@ -1,6 +1,6 @@
 var i = 1; // Set counter to 1  
 // Message
-var msg = '<h2>Multiplication Table</h2>'
+var msg = '<h2>Multiplication Table</h2>';
 // Prompt to enter number from 0 - 10
 var input  = prompt("Please enter a number from 0 - 10");
   
