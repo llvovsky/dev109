@@ -1,5 +1,20 @@
-  span {
+/* Style the span  */
+span {
     font-family: monospace;
     font-size: 18px;
   }
-</style>
+
+/* Apply spacing between components */
+label {
+  display: block;
+  margin-top: 15px;  
+  font-weight: bold; 
+}
+
+/* Style the button  */
+button {
+  margin-top: 20px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
