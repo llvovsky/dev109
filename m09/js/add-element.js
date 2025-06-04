@@ -23,7 +23,7 @@ function addItem() {
       } 
             
     finally {
-    // Show message in page (not popup)
+    // Show message in page 
     var messageArea = document.getElementById("message");
     if (messageArea) {
       messageArea.textContent = "If entry was empty, no item was added.";
