@@ -28,6 +28,9 @@ function addItem() {
     if (itemText === "" || itemText === null || itemText === undefined) {
      messageArea.textContent = "If entry was empty, no item was added.";
     }
+    else {
+    messageArea.textContent = ''; // Corrected: Clear the message area
+     }
 
       // Clear the input box
       document.getElementById("newGroceryItem").value = "";
