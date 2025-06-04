@@ -25,9 +25,8 @@ function addItem() {
     finally {
     // Show message in page 
     var messageArea = document.getElementById("message");
-   // if (messageArea) {
-     if (itemText.value.trim() === "") {
-      messageArea.textContent = "If entry was empty, no item was added.";
+    if (messageArea) {
+     messageArea.textContent = "If entry was empty, no item was added.";
     }
 
       // Clear the input box
