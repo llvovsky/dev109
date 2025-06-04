@@ -23,9 +23,9 @@ function addItem() {
       } 
             
     finally {
-    // Show message in page 
-    var messageArea = document.getElementById("message");
-    if (messageArea) {
+    // Show error 
+    const messageArea = document.getElementById("message");
+    if (itemText === "" || itemText === null || itemText === undefined) {
      messageArea.textContent = "If entry was empty, no item was added.";
     }
 
