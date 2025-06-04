@@ -29,7 +29,7 @@ function addItem() {
      messageArea.textContent = "If entry was empty, no item was added.";
     }
     else {
-    messageArea.textContent = ''; // Corrected: Clear the message area
+    messageArea.textContent = ''; // Clear the message area if the entry was not empty
      }
 
       // Clear the input box
