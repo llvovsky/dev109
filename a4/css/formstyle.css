@@ -42,3 +42,8 @@ body {
     button:hover {
       background: #246b45;
     }
+
+   .required {
+    color: red;
+    margin-left: 4px;
+  }
