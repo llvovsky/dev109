@@ -105,7 +105,7 @@ function validateForm() {
     validState && validCountry && validZipcode;
 
   if (formValid) {
-    window.location.href = "ThankYou.html";
+    window.location.href = "thankyou.html";
     return false; // prevent default form submission
   }
 
