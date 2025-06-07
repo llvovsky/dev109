@@ -17,24 +17,31 @@
 
     <label>Last Name:<span class="required">*</span></label>
     <input type="text" id="lastname" maxlength="20" >
+    <div id="lastnameError" class="error-message"></div>
 
     <label>Email:<span class="required">*</span></label>
     <input type="text" id="email" >
+    <div id="emailError" class="error-message"></div>
 
     <label>Phone:<span class="required">*</span></label>
     <input type="text" id="phone" placeholder="1234567890" >
+    <div id="phoneError" class="error-message"></div>
 
     <label>Username:<span class="required">*</span></label>
     <input type="text" id="username" maxlength="12" >
+    <div id="usernameError" class="error-message"></div>
 
     <label>Password:<span class="required">*</span></label>
     <input type="password" id="password" maxlength="7" >
+    <div id="passwordError" class="error-message"></div>
 
     <label>Address:<span class="required">*</span></label>
     <input type="text" id="address" >
+    <div id="addressError" class="error-message"></div>
 
     <label>City:<span class="required">*</span></label>
     <input type="text" id="city" >
+    <div id="cityError" class="error-message"></div>
 
     <label for="state">State:<span class="required">*</span></label>
   <select id="state" name="state">
@@ -91,6 +98,7 @@
   <option value="WY">Wyoming</option>
   <option value="DC">District of Columbia</option>
 </select>
+  <div id="stateError" class="error-message"></div>
 
 
     <label>Country:<span class="required">*</span></label>
@@ -101,9 +109,11 @@
       <option value="UK">United Kingdom</option>
       <option value="India">Israel</option>
     </select>
+     <div id="countryError" class="error-message"></div>
 
     <label>Zip Code:<span class="required">*</span></label>
     <input type="text" id="zipcode" maxlength="5" >
+     <div id="zipcodeError" class="error-message"></div>
 
     <label>Comments (optional):</label>
     <textarea id="comments"></textarea>
