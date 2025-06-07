@@ -81,12 +81,25 @@ function validateForm() {
         validState = true;
       }
 
+      
+      // country validation
       const country = document.getElementById("country").value;
       if (!country) {
         errorMessages += "<p>Country is required.</p>";
       } else {
         validCountry = true;
-      }
+            
+    if (country === "USA") {
+    if (state === "") {
+      errorMessages += "<p>State is required when country is USA.</p>";
+    } else {
+      validState = true;
+    }
+      } else {
+    // if country is not USA, state is not required
+    validState = true;
+         }
+     }
 
       const zipcode = document.getElementById("zipcode").value.trim();
       if (country === "USA") {
