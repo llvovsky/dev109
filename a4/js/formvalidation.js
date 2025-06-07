@@ -98,8 +98,16 @@ function validateForm() {
         }
       }
 
-      document.getElementById("errorMessages").innerHTML = errorMessages;
-      return (validFirstname && validLastname && validEmail && validPhone &&
-              validUsername && validPassword && validAddress && validCity &&
-              validState && validCountry && validZipcode);
-    }
+     document.getElementById("errorMessages").innerHTML = errorMessages;
+
+  const formValid = validFirstname && validLastname && validEmail && validPhone &&
+    validUsername && validPassword && validAddress && validCity &&
+    validState && validCountry && validZipcode;
+
+  if (formValid) {
+    window.location.href = "ThankYou.html";
+    return false; // prevent default form submission
+  }
+
+  return false; // stop form submission on error
+}
