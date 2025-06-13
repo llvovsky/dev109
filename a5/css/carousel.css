@@ -58,6 +58,15 @@ button:hover {
     background-color: #0056b3;
 }
 
+#footer {
+  border: solid 1px;
+  padding: 10px;
+  margin: 0px;
+  text-align: center;
+  background-color:#7EB5BD;
+  width:100%;
+}
+
 
 #auto {
     margin-right: 8px;
