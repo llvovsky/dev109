@@ -1,41 +1,67 @@
-var myImages =["images/image1.jpg", "images/image2.jpg", "images/image3.jpg", "images/image4.jpg", "images/image5.jpg"];
-var captionImages =["Laugh","Love","Lunch","Happiness","Family"];
-var index=0; 
+// image and caption data
+const images = [
+    { src: "images/image1.jpg", caption: "LAUGH" },
+    { src: "images/image2.jpg", caption: "LOVE" },
+    { src: "images/image3.jpg", caption: "LUNCH" },
+    { src: "images/image4.jpg", caption: "HAPPINESS" },
+    { src: "images/image5.jpg", caption: "FAMILY" }
+];
 
- function updateImage(){
- document.getElementById("slideshow").src = myImages[index];
- document.getElementById("slideshow").alt= captionImages[index];
- document.getElementById("caption").textContent = captionImages[index]; 
-} 
+let currentIndex = 0;
+let countdown = 4; // seconds
+let timer;
 
-function next(){
- if (myImages.length == index+1)
- index=0;
- else
- index++;
- updateImage();
-} 
- 
+// DOM elements
+const slideshow = document.getElementById('slideshow');
+const caption = document.getElementById('caption');
+const timerDisplay = document.getElementById('timer');
+const nextButton = document.getElementById('next');
+const previousButton = document.getElementById('previous');
 
-function back(){
- if (index===0)
- index=myImages.length-1;
- else
- index--;
- 
- updateImage();
-} 
-
-var nextButton = document.getElementById("next"); 
-var previousButton = document.getElementById("previous"); 
-
-previousButton.addEventListener("click",back,false);
-nextButton.addEventListener("click",next,false); 
-   
-function autoSlide(){
-if (document.getElementById("auto").checked)
- next(); 
+// show current image
+function showImage(index) {
+    slideshow.src = images[index].src;
+    caption.textContent = images[index].caption;
 }
 
-setInterval(autoSlide,2000); // Next
-  
+// move to next image
+function nextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
+    resetCountdown();
+}
+
+// move to previous image
+function previousImage() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage(currentIndex);
+    resetCountdown();
+}
+
+// countdown logic
+function startCountdown() {
+    timer = setInterval(() => {
+        countdown--;
+        timerDisplay.textContent = countdown;
+
+        if (countdown === 0) {
+            nextImage();
+        }
+    }, 1000);
+}
+
+// reset countdown when manually navigating
+function resetCountdown() {
+    clearInterval(timer);
+    countdown = 4;
+    timerDisplay.textContent = countdown;
+    startCountdown();
+}
+
+// event listeners
+nextButton.addEventListener('click', nextImage);
+previousButton.addEventListener('click', previousImage);
+
+// initialize
+showImage(currentIndex);
+startCountdown();
